@@ -92,7 +92,7 @@ class cbfs(param.Parameterized):
     def __init__(self, **params):
         super(cbfs, self).__init__(**params)
         self.panels = []
-        self.loaded_file = "docs/cs229_lectures/MachineLearning-Lecture01.pdf"
+        self.loaded_file = "docs/cs229_lectures/MachineLearning-Lecture01.pdf" #make sure to put or use the pdf you want
         self.qa = load_db(self.loaded_file, "stuff", 4)
 
     def login_user(self, email):
