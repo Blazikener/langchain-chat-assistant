@@ -1,6 +1,6 @@
 # langchain-chat-assistant
 This is an interactive conversational interface that enables users to chat with their own data (PDFs). Built using Python, Panel, and LangChain, the bot keeps track of conversation history, detects user mood, extracts discussed topics, and enhances responses using Retrieval-Augmented Generation (RAG) over documents like lecture notes.
-# Features
+## Features
 -> Upload and interact with PDF documents
 
 -> Memory aware conversational history
@@ -13,17 +13,21 @@ This is an interactive conversational interface that enables users to chat with 
 
 -> Saves user context for continued sessions
 
-Installation:
+## Installation:
 
 Clone the repository:
-
+```bash
 git clone <repository_url>
 cd <repository_directory>
+```
 
-Install dependencies:
+## Install dependencies:
 
+```bash
 pip install -r requirements.txt
-Set up your environment:
+```
+
+## Set up your environment:
 
 Create a .env file in the root directory
 
@@ -31,7 +35,7 @@ Add your OpenAI key:
 
 OPENAI_API_KEY=your_openai_key_here
 
-Workflow:
+## Workflow:
 
 1. Login with email: Initializes mood/topic tracking
 
@@ -49,7 +53,8 @@ Workflow:
 
 -> Configure: Load new files or reset history
 
-Example Prompt Flow
+Example Prompt Flow:
+
 User: “I'm feeling overwhelmed with exams.”
 
 System detects: mood = sad, topic = exams
@@ -58,7 +63,7 @@ Response is enhanced with mood + topic history.
 
 System returns a short, contextual answer with “thanks for asking!” at the end.
 
-Screenshot:
+## Screenshot:
 Chatting in with the bot
 ![image](https://github.com/user-attachments/assets/91d6ca5b-70af-4c70-95b7-b9146fd065a1)
 
