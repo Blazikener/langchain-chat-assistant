@@ -1,0 +1,9 @@
+langchain
+openai
+panel
+param
+python-dotenv
+textblob
+PyPDF2
+tiktoken
+chromadb
